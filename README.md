@@ -3,7 +3,7 @@
 - Has a dashboard which the customer can track the history of usages, and set alerts such as when GPU utilization suddenly increases or drops.
 - All tools that are utilized are open sourced.
 
-![](https://github.internal.digitalocean.com/digitalocean/AI-ML-CSE/blob/develop/telemetry/telemetrydiagram.png)
+![](https://github.com/gradient-ai/telemetry/blob/main/telemetrydiagram.png)
 
 # Components:
 - DCGM Exporter: It exposes GPU metrics exporter for Prometheus leveraging NVIDIA DCGM. Running on each GPU machine under docker container. Lightweight.
