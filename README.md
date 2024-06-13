@@ -58,7 +58,7 @@ Obtain your API Keys for your CORE Paperspace Account by following the instructi
 - ssh into your A4000 machine
 - `sudo su`
 - Run the DCGM Exporter Docker command: `docker run -d --gpus all --rm -p 9400:9400 -c 300 nvcr.io/nvidia/k8s/dcgm-exporter:3.3.6-3.4.2-ubuntu22.04`
-- The above container will output the promethesus metrics to localhost:9400 every 300ms. Run `curl http://localhost:9400` and you should see a bunch of metrics in Prometheus formatting.
+- The above container will output the promethesus metrics to localhost:9400 every 300ms. Run `curl http://localhost:9400/metrics` and you should see a bunch of metrics in Prometheus formatting.
 - Downlaod installgb.sh and run `chmod +x installgb.sh` and then run `./installgb.sh`. This script will install the GPU Burn Container for later use.
 - Run `hostname -I | cut -d" " -f 1` and grab the IP address to use in the next steps (on C5 machine, naming it as <IP>)
 
